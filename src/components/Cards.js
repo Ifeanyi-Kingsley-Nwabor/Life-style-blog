@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card'
 
 const Cards = ({article}) => {
-    console.log(article.fields)
+    /*console.log(article.fields)*/
     return (
         <div>
             
@@ -11,6 +11,7 @@ const Cards = ({article}) => {
             <Card.Body className='card_body'>
                 <Card.Title>{article.fields.name}</Card.Title>
                 <Card.Text>{article.fields.description}</Card.Text>
+                <Card.Text>{article.fields.nameOfAuthor}</Card.Text>
             </Card.Body>
             {/* <ListGroup className="list-group-flush">
                 <ListGroupItem>Cras justo odio</ListGroupItem>
