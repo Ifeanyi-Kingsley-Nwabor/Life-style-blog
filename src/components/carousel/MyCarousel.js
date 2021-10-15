@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
 import NavBar from '../NavBar'
@@ -23,10 +23,10 @@ const MyCarousel = () => {
         <div>
             <AliceCarousel autoPlay infinite autoPlayInterval="3000">
                 <Header />
-                <img src={hamburg} className="sliderimg"/>
-                <img src={mosqueAbuDhabi} className="sliderimg"/>
-                <img src={miami} className="sliderimg"/>
-                <img src={spotLight} className="sliderimg"/>
+                <img src={hamburg} className="sliderimg" alt='hamburg'/>
+                <img src={mosqueAbuDhabi} className="sliderimg" alt='mosque'/>
+                <img src={miami} className="sliderimg" alt='miami'/>
+                <img src={spotLight} className="sliderimg" alt='spotlight'/>
             </AliceCarousel>
         </div>
     
