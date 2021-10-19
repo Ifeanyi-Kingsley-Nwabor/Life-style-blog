@@ -3,6 +3,8 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import { client } from './client';
 import Posts from './components/Posts';
+import NavBar from './components/NavBar'
+
 
 const App = () => {
 const [content, setContent] = useState();
@@ -21,6 +23,7 @@ const [content, setContent] = useState();
     return (
       <div className="App">
         <div className="container">
+          <div class><NavBar /></div>
           {/* <header className="App-header">
             <div className="wrapper">
               <span>Style <br />and <br />Kulture</span>
