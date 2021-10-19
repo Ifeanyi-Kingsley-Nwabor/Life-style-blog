@@ -21,7 +21,7 @@ const MyCarousel = () => {
     <div> 
         
         <div>
-            <AliceCarousel autoPlay infinite autoPlayInterval="3000">
+            <AliceCarousel autoPlay animationType='fadeout' infinite autoPlayInterval="3000">
                 <Header />
                 <img src={hamburg} className="sliderimg" alt='hamburg'/>
                 <img src={mosqueAbuDhabi} className="sliderimg" alt='mosque'/>

@@ -1,9 +1,18 @@
 import React, {useState, useEffect} from 'react';
-//import { ContentfulClient, ContentfulProvider } from 'react-contentful';
 import './App.css';
 import { client } from './client';
-import Posts from './components/Posts';
+import { Switch, Route } from 'react-router';
+
+import Home from './components/Home';
+import About from './components/About';
+import Trending from './components/trendingNews/Trending';
+import Contact from './components/Contact';
 import NavBar from './components/NavBar'
+import MyCarousel from './components/carousel/MyCarousel';
+
+
+
+
 
 
 const App = () => {
@@ -24,16 +33,21 @@ const [content, setContent] = useState();
       <div className="App">
         <div className="container">
           <div class><NavBar /></div>
-          {/* <header className="App-header">
-            <div className="wrapper">
-              <span>Style <br />and <br />Kulture</span>
-            </div>
-          </header> */}
-          <main>
-            <div className="wrapper">
-              {content && <Posts content={content}/>}
-            </div>
-          </main>
+          <MyCarousel />
+          <Switch>
+            <Route  path = '/about'>
+              <About />
+            </Route>
+            <Route path = '/trending'>
+              <Trending />
+            </Route>
+            <Route path = '/contact'>
+              <Contact />
+            </Route>
+            <Route exact path = '/:id?'>
+              <Home content={content}/>
+            </Route>
+          </Switch>
         </div>
       </div>
     );
