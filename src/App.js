@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import { client } from './client';
+import Footer from './components/Footer';
+import SocialFollow from './components/SocialFollow';
 import { Switch, Route } from 'react-router';
 
 import Home from './components/Home';
@@ -48,6 +50,8 @@ const [content, setContent] = useState();
               <Home content={content}/>
             </Route>
           </Switch>
+          <SocialFollow/>
+          <Footer/>
         </div>
       </div>
     );
