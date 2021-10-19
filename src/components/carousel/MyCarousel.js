@@ -1,10 +1,10 @@
 import React from 'react';
 import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
-import NavBar from '../NavBar'
 import mosqueAbuDhabi from './img/mosqueAbuDhabi.jpg';
 import  hamburg from './img/hamburg.jpg';
 import miami from './img/miami.jpg';
+
 import spotLight from './img/spot-light.jpeg';
 import Header from '../Header'
 
@@ -19,7 +19,7 @@ const MyCarousel = () => {
         // };
     return (
     <div> 
-        <div><NavBar /></div>
+        
         <div>
             <AliceCarousel autoPlay infinite autoPlayInterval="3000">
                 <Header />
@@ -27,6 +27,7 @@ const MyCarousel = () => {
                 <img src={mosqueAbuDhabi} className="sliderimg" alt='mosque'/>
                 <img src={miami} className="sliderimg" alt='miami'/>
                 <img src={spotLight} className="sliderimg" alt='spotlight'/>
+
             </AliceCarousel>
         </div>
     
