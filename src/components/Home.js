@@ -6,15 +6,22 @@ import { useParams } from 'react-router';
 
 const Home = ({content}) => {
     const { id } = useParams();
-    const contentId = content && content.filter((article) => 
-    id ? id === article.id : article
-    ); console.log(contentId)
+
+    if (!content) {
+        return (
+            <h1>Loading...</h1>
+        )
+    }
+
+    const filteredArticles = content
+    .filter((article) => id ? Number(id) === article.id : article)
+
+    console.log({filteredArticles})
+
     return (
         <div>
-            {content && content
-            .filter((article) => id ? id ===article.id : article)
+            {filteredArticles
             .map((article, index) => <NodeCard article={article} id={id} key={index}/>)}
-            
         </div>
     )
 }

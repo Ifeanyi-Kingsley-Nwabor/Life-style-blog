@@ -90,7 +90,8 @@
 .card_body {
   display: flex;
   position: relative;
-  background-color: #e9f1f3;
+  background-color: #f4f7f8;
+  opacity: 0.8;
 
   /* background: linear-gradient(
     to bottom,
@@ -140,6 +141,8 @@ margin: 30px;
   font-weight: 500;
 
 }
+
+
 
 .card_container {
   margin-top: 50px;
