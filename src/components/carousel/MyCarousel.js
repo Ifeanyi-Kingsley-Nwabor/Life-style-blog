@@ -1,9 +1,12 @@
 import React from 'react';
 import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
-import mosqueAbuDhabi from './img/mosqueAbuDhabi.jpg';
-import  hamburg from './img/hamburg.jpg';
-import miami from './img/miami.jpg';
+import fashion from './img/fashion.png';
+import  pixels from './img/pixels.png';
+import night from './img/night.png';
+import breakFast from './img/breakFast.png';
+import pinky from './img/pinky.png';
+
 
 import spotLight from './img/spot-light.jpeg';
 import Header from '../Header'
@@ -23,10 +26,11 @@ const MyCarousel = () => {
         <div>
             <AliceCarousel autoPlay animationType='fadeout' infinite autoPlayInterval="3000">
                 <Header />
-                <img src={hamburg} className="sliderimg" alt='hamburg'/>
-                <img src={mosqueAbuDhabi} className="sliderimg" alt='mosque'/>
-                <img src={miami} className="sliderimg" alt='miami'/>
-                <img src={spotLight} className="sliderimg" alt='spotlight'/>
+                <img src={pixels} className="sliderimg" alt='pixels'/>
+                <img src={fashion} className="sliderimg" alt='fashion'/>
+                <img src={night} className="sliderimg" alt='night'/>
+                <img src={breakFast} className="sliderimg" alt='breakFast'/> 
+                <img src={pinky} className="sliderimg" alt='pinky'/> 
 
             </AliceCarousel>
         </div>

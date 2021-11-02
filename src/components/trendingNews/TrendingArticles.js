@@ -5,7 +5,7 @@ const TrendingArticles = ({latestNews})  => {
   
     return (
         <div>
-            {latestNews.slice(0, 2).map((article, index) => <LatestNewsCard article={article} key={index}/>)}
+            {latestNews.slice(0, 10).map((article, index) => <LatestNewsCard article={article} key={index}/>)}
         </div>
     )
 }
