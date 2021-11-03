@@ -2,6 +2,7 @@
   text-align: center;
   /* background-color: #caebf3; */
   background-image: url("./img/snow_bg.png");
+  box-sizing: border-box;
   
   
 }
@@ -47,7 +48,8 @@
 .sliderimg {
   width: 100%;
   height: 500px;
-  object-fit: cover;
+  object-fit: contain;
+  
 }
 
 .logobtn {
@@ -59,20 +61,11 @@
   height: 50px;
 }
 
-.homebtn {
+.navbtns {
   margin: 0 20px 0 20px;
 }
 
-.aboutbtn {
-  margin: 0 20px 0 20px;
-}
 
-.trendbtn {
-  margin: 0 20px 0 20px;
-}
-.contactbtn {
-  margin: 0 20px 0 20px;
-}
 
 .cardPhoto {
   width: 70%;
@@ -84,13 +77,15 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 0 auto;
   
 }
 
 .card_body {
+  margin: 20px 0 20px 0;
   display: flex;
   position: relative;
-  background-color: #f4f7f8;
+  background-color: #dfe6e9;
   opacity: 0.8;
 
   /* background: linear-gradient(
@@ -121,12 +116,76 @@
   
 }
 
-.card_nameAuthor {
 
+
+.read_article {
   position: relative;
-margin: 30px;
+  bottom: 15px;
+  left: 400px;
+  
+}
+
+.read_article:hover {
+  color: #dce1e4;
+  border-radius: 1.5em;
+  background: #63abee;
+  padding: 10px;
+}
+
+ .card_link:hover {
+  color: #dce1e4;
+  border-radius: 1.5em;
+  background: #63abee;
+  padding: 10px;
+}
+
+.card_author {
+  position: relative;
+  top: 20px;
+  left: 100px;
+}
+
+.all_cont {
+  display: flex;
+  
+}
+
+
+.authorContainer {
+  display: block;
+  margin: 0 auto;
+  align-items:baseline;
+  justify-content: center;
+  color: rgb(97, 96, 96);
+  background-color: rgba(181, 184, 175, 0.6);
+  
+}
+
+.card_emailAuthor {
+ 
+  position: relative;
+  
   font-style: italic;
-  color: rgb(105, 103, 100);
+  
+}
+
+
+.card_twitterAuthor {
+  display: block;
+  position: relative;
+  
+  font-style: italic;
+  
+}
+
+
+.card_nameAuthor {
+  
+  position: relative;
+  
+  font-style: italic;
+  
+  
 }
 
  .card_link {
@@ -142,7 +201,28 @@ margin: 30px;
 
 }
 
+.trend_container {
+  display: flex;
+  justify-self: center;
+  pad: 20px;
+  /* flex-direction: row;
+  justify-content: center; */
+}
 
+.card_date {
+display: block;
+position: relative;
+
+right: 20px;
+}
+
+.card_trend_author {
+display: block;
+position: relative;
+top: 70px;
+left: 60px;
+
+}
 
 .card_container {
   margin-top: 50px;
@@ -179,7 +259,7 @@ text-align: center;
   margin: 20px;
 }
 
-.form_email {
+.form_details {
   width: 300px;
   height: 20px;
   margin: 20px;
@@ -206,11 +286,21 @@ top: 30px;
 .about_section {
   background-image: url("./img/about.png");
   object-fit: cover;
-  color: rgb(189, 186, 182);
   height: 400px;
   
 }
 
+.about_title {
+  position: relative;
+  left: 150px;
+}
+
+.about_text {
+  width: 600px;
+  color: rgb(189, 186, 182);
+  text-align: justify;
+  margin: 0 auto;
+}
 
 .social-title {
   font-size: 20px;

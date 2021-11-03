@@ -10,25 +10,32 @@ const NavBar = () => {
         <Navbar.Brand className="logobtn bkk" href="#home">
           <img src={bkk} alt="" />
         </Navbar.Brand>
-        <NavLink to="/" className="homebtn">
+        <NavLink to="/" className="navbtns">
           Home
         </NavLink>
 
-        <NavLink to="/about" className="aboutbtn">
+        <NavLink to="/about" className="navbtns">
           About us
         </NavLink>
 
-        <NavLink to="/trending" className="trendbtn">
+        <NavLink to="/trending" className="navbtns">
           Trending
         </NavLink>
 
         <NavLink
+          to="/authors"
+          className="navbtns"
+          className="special-link">
+          Authors
+        </NavLink>
+
+        <NavLink
           to="/contact"
-          className="contactbtn"
-          activeClassName="special-link"
-        >
+          className="navbtns"
+          activeClassName="special-link">
           Contact
         </NavLink>
+
       </nav>
     </div>
   );

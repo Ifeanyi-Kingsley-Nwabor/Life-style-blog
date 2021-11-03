@@ -7,6 +7,7 @@ import { Switch, Route } from "react-router";
 import Home from "./components/Home";
 import About from "./components/About";
 import Trending from "./components/trendingNews/Trending";
+import Authors from "./components/node_express/authors/Authors";
 import Contact from "./components/Contact";
 import NavBar from "./components/NavBar";
 import MyCarousel from "./components/carousel/MyCarousel";
@@ -35,6 +36,9 @@ const App = () => {
           </Route>
           <Route path="/trending">
             <Trending />
+          </Route>
+          <Route path="/authors">
+            <Authors />
           </Route>
           <Route path="/contact">
             <Contact />

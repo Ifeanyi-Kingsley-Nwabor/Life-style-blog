@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
-import Author from "./Author";
+import AuthorCard from "./authors/AuthorCard";
 import { Link } from "react-router-dom";
 import SocialShareIcon from "../SocialShareIcon";
 import parse from "html-react-parser";
@@ -13,7 +13,8 @@ const NodeCard = ({ article, id }) => {
 
     setShareIcon(true);
   };
-
+// const {first_name, last_name} = AuthorCard;
+// const author = {first_name, last_name} ;
   // console.log(id);
   /*console.log(article.fields)*/
 
@@ -39,8 +40,9 @@ const NodeCard = ({ article, id }) => {
             </Card.Text>
           )}
           {/* <Card.Text className='card_description'>{parse(article.description)}</Card.Text> */}
-          {/* <Author article={article}/> */}
-          <Card.Link to="<Author article={article}"></Card.Link>
+          <Card.Title className="card_author">{article.first_name} {article.last_name}</Card.Title>
+          
+          {/* <Card.Link href="<AuthorCard/>" ><AuthorCard /></Card.Link> */}
           <Card.Link className="card_link" href="#" onClick={handleClick}>
             Share
           </Card.Link>

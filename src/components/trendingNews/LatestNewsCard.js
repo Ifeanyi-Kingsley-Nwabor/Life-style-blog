@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const LatestNewsCard = ({ article }) => {
   // console.log(article.multimedia)
   return (
-    <div>
+    <div className="trend_container">
       <Card
         border="primary"
-        className="cardContainer card"
+        className="card_container"
         style={{ width: "35rem" }}
       >
         <Card.Img
@@ -19,10 +19,10 @@ const LatestNewsCard = ({ article }) => {
         <Card.Body className="card_body">
           <Card.Title className="card_title">{article.title}</Card.Title>
           <Card.Text className="card_description">{article.abstract}</Card.Text>
-          <Card.Text className="card_nameAuthor">{article.byline}</Card.Text>
-          <Card.Text className="card_nameAuthor">
+          <Card.Text className="card_trend_author">{article.byline}</Card.Text>
+          {/* <Card.Text className="card_date">
             {article.published_date}
-          </Card.Text>
+          </Card.Text> */}
           <a className="card_link" href={article.url} target="_blank">
             Read Article
           </a>
