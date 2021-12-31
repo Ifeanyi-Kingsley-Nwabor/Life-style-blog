@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
-import axios from 'axios'
+import axios from "axios";
 
 const Contact = () => {
   const [formInput, setFormInput] = useState({
@@ -9,7 +9,6 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
 
   const url = "http://localhost:3004/api/contact_messages";
 
@@ -41,18 +40,18 @@ const Contact = () => {
     e.preventDefault();
     console.log(formInput);
     const requestOptions = {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          first_name: formInput.first_name,
-          last_name: formInput.last_name,
-          email: formInput.email,
-          message: formInput.message
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        first_name: formInput.first_name,
+        last_name: formInput.last_name,
+        email: formInput.email,
+        message: formInput.message,
       }),
-      };
-      fetch(url, requestOptions)
-        .then((response) => response.json())
-        .then((data) => setFormInput(data));
+    };
+    fetch(url, requestOptions)
+      .then((response) => response.json())
+      .then((data) => setFormInput(data));
 
     setFormInput(" ");
   };

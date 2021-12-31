@@ -26,7 +26,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="container">
-        <div class>
+        <div>
           <NavBar />
         </div>
         <MyCarousel />

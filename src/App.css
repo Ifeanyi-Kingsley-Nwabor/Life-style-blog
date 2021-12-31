@@ -3,8 +3,6 @@
   /* background-color: #caebf3; */
   background-image: url("./img/snow_bg.png");
   box-sizing: border-box;
-  
-  
 }
 
 .App-header {
@@ -47,9 +45,8 @@
 
 .sliderimg {
   width: 100%;
-  height: 500px;
-  object-fit: contain;
-  
+  height: 700px;
+  object-fit: none;
 }
 
 .logobtn {
@@ -65,11 +62,8 @@
   margin: 0 20px 0 20px;
 }
 
-
-
 .cardPhoto {
   width: 70%;
-  
 }
 
 .card_block {
@@ -78,7 +72,6 @@
   flex-direction: column;
   align-items: center;
   width: 0 auto;
-  
 }
 
 .card_body {
@@ -113,16 +106,12 @@
   left: 50px;
   text-align: justify;
   margin-top: 50px;
-  
 }
-
-
 
 .read_article {
   position: relative;
   bottom: 15px;
   left: 400px;
-  
 }
 
 .read_article:hover {
@@ -132,7 +121,7 @@
   padding: 10px;
 }
 
- .card_link:hover {
+.card_link:hover {
   color: #dce1e4;
   border-radius: 1.5em;
   background: #63abee;
@@ -147,48 +136,37 @@
 
 .all_cont {
   display: flex;
-  
 }
-
 
 .authorContainer {
   display: block;
   margin: 0 auto;
-  align-items:baseline;
+  align-items: baseline;
   justify-content: center;
   color: rgb(97, 96, 96);
   background-color: rgba(181, 184, 175, 0.6);
-  
 }
 
 .card_emailAuthor {
- 
   position: relative;
-  
-  font-style: italic;
-  
-}
 
+  font-style: italic;
+}
 
 .card_twitterAuthor {
   display: block;
   position: relative;
-  
-  font-style: italic;
-  
-}
 
+  font-style: italic;
+}
 
 .card_nameAuthor {
-  
   position: relative;
-  
+
   font-style: italic;
-  
-  
 }
 
- .card_link {
+.card_link {
   position: absolute;
   left: 100px;
 }
@@ -198,7 +176,6 @@
   left: 400px;
   top: 12px;
   font-weight: 500;
-
 }
 
 .trend_container {
@@ -210,24 +187,22 @@
 }
 
 .card_date {
-display: block;
-position: relative;
+  display: block;
+  position: relative;
 
-right: 20px;
+  right: 20px;
 }
 
 .card_trend_author {
-display: block;
-position: relative;
-top: 70px;
-left: 60px;
-
+  display: block;
+  position: relative;
+  top: 70px;
+  left: 60px;
 }
 
 .card_container {
   margin-top: 50px;
   margin-bottom: 30px;
- 
 }
 
 .contact_container {
@@ -235,12 +210,12 @@ left: 60px;
 }
 
 .authors {
-position: relative;
-top: 100px;
-font-size: 20px;
+  position: relative;
+  top: 100px;
+  font-size: 20px;
 }
 .about_authors {
-text-align: center;
+  text-align: center;
 }
 .about_authors_link {
   color: white;
@@ -266,13 +241,11 @@ text-align: center;
 }
 
 .form_paragraph {
-text-align:start;
-margin-left: 20px;
-position: relative;
-top: 30px;
-
+  text-align: start;
+  margin-left: 20px;
+  position: relative;
+  top: 30px;
 }
-
 
 .contact_message {
   display: flex;
@@ -287,7 +260,6 @@ top: 30px;
   background-image: url("./img/about.png");
   object-fit: cover;
   height: 400px;
-  
 }
 
 .about_title {
@@ -349,4 +321,3 @@ a.instagram {
 .footer-copyright {
   font-size: 10px;
 }
-
