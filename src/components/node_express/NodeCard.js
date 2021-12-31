@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import SocialShareIcon from "../SocialShareIcon";
 import parse from "html-react-parser";
 
+const { REACT_APP_BACKEND_URL } = process.env;
+
 const NodeCard = ({ article, id }) => {
   const [shareIcon, setShareIcon] = useState(false);
   // // console.log(article)
@@ -13,12 +15,12 @@ const NodeCard = ({ article, id }) => {
 
     setShareIcon(true);
   };
-// const {first_name, last_name} = AuthorCard;
-// const author = {first_name, last_name} ;
+  // const {first_name, last_name} = AuthorCard;
+  // const author = {first_name, last_name} ;
   // console.log(id);
   /*console.log(article.fields)*/
 
- return (
+  return (
     <div className="card_block">
       <Card
         border="primary"
@@ -28,20 +30,24 @@ const NodeCard = ({ article, id }) => {
         <Card.Img
           variant="top"
           className="cardPhoto"
-          src={`http://localhost:3004${article.featured_image}`}
+          src={`${REACT_APP_BACKEND_URL}${article.featured_image}`}
         />
         <Card.Body className="card_body">
           <Card.Title className="card_title">{article.name}</Card.Title>
           {id ? (
-            <Card.Text className='card_description'>{parse(article.description)}</Card.Text>
+            <Card.Text className="card_description">
+              {parse(article.description)}
+            </Card.Text>
           ) : (
-            <Card.Text className='read_article'>
+            <Card.Text className="read_article">
               <Link to={`/${article.id}`}>Read article</Link>
             </Card.Text>
           )}
           {/* <Card.Text className='card_description'>{parse(article.description)}</Card.Text> */}
-          <Card.Title className="card_author">{article.first_name} {article.last_name}</Card.Title>
-          
+          <Card.Title className="card_author">
+            {article.first_name} {article.last_name}
+          </Card.Title>
+
           {/* <Card.Link href="<AuthorCard/>" ><AuthorCard /></Card.Link> */}
           <Card.Link className="card_link" href="#" onClick={handleClick}>
             Share

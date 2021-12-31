@@ -12,10 +12,12 @@ import Contact from "./components/Contact";
 import NavBar from "./components/NavBar";
 import MyCarousel from "./components/carousel/MyCarousel";
 
+const { REACT_APP_BACKEND_URL } = process.env;
+
 const App = () => {
   const [content, setContent] = useState();
   useEffect(() => {
-    fetch("http://localhost:3004/api/posts")
+    fetch(`${REACT_APP_BACKEND_URL}/posts`)
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
