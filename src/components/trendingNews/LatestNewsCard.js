@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { Link } from "react-router-dom";
 
 const LatestNewsCard = ({ article }) => {
   // console.log(article.multimedia)
@@ -23,7 +22,12 @@ const LatestNewsCard = ({ article }) => {
           {/* <Card.Text className="card_date">
             {article.published_date}
           </Card.Text> */}
-          <a className="card_link" href={article.url} target="_blank">
+          <a
+            className="card_link"
+            href={article.url}
+            target="_blank"
+            rel=" noopener noreferrer"
+          >
             Read Article
           </a>
           {/* <Card.Link href="#" onClick={handleClick}>Share</Card.Link> */}

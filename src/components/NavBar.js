@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 import bkk from "../img/bkk.jpg";
 import { NavLink } from "react-router-dom";
 
@@ -22,20 +22,17 @@ const NavBar = () => {
           Trending
         </NavLink>
 
-        <NavLink
-          to="/authors"
-          className="navbtns"
-          className="special-link">
+        <NavLink to="/authors" className="navbtns">
           Authors
         </NavLink>
 
         <NavLink
           to="/contact"
           className="navbtns"
-          activeClassName="special-link">
+          activeClassName="special-link"
+        >
           Contact
         </NavLink>
-
       </nav>
     </div>
   );

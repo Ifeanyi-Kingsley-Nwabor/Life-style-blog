@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-bootstrap";
-import axios from "axios";
 const { REACT_APP_BACKEND_URL } = process.env;
 
 const Contact = () => {

@@ -19,7 +19,7 @@ const PostCard = ({ article, id }) => {
       <Card
         border="primary"
         className="cardContainer"
-        style={{ width: "35rem" }}
+        // style={{ width: "55rem" }}
       >
         <Card.Img
           variant="top"

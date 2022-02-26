@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
-import AuthorCard from "./authors/AuthorCard";
+// import AuthorCard from "./authors/AuthorCard";
 import { Link } from "react-router-dom";
 import SocialShareIcon from "../SocialShareIcon";
 import parse from "html-react-parser";
